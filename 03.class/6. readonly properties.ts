@@ -16,5 +16,5 @@ class Person6Klass {
   }
 }
 
-const classP6_1: Person6Klass = new Person6Klass("Jyoon", 33);
+const classP6_1: Person6Klass = new Person6Klass("Jyoon", 32);
 // classP6_1.name = "YJY";  // [point] readonly라서 에러 

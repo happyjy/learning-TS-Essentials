@@ -9,6 +9,21 @@
     * protected 외부에서 접근 불가능, 상속관계에서는 접근가능
 
 */
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -81,7 +96,7 @@ var Person3Klass = /** @class */ (function () {
     };
     return Person3Klass;
 }());
-var classP3_1 = new Person3Klass(33);
+var classP3_1 = new Person3Klass(32);
 var classP3_2 = new Person3Klass();
 (function () { return __awaiter(void 0, void 0, void 0, function () {
     var result;
@@ -102,3 +117,23 @@ var classP3_2 = new Person3Klass();
 console.log(classP3_1);
 console.log(classP3_2);
 // console.log(classP3_2.age); // age 프로퍼티 접근 불가(private으로 선언됨.)
+var Base = /** @class */ (function () {
+    function Base() {
+        this.m = 10;
+    }
+    return Base;
+}());
+var Derived = /** @class */ (function (_super) {
+    __extends(Derived, _super);
+    function Derived() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        // No modifier, so default is 'public'
+        _this.m = 15;
+        return _this;
+    }
+    return Derived;
+}(Base));
+var d1 = new Base();
+// console.log("### > d1: ", d1.m); // 접근 불가
+var d2 = new Derived();
+console.log("### > d2: ", d2.m); // OK

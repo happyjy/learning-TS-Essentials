@@ -45,7 +45,7 @@ class Person2Klass {
   }
 }
 
-const classP2_1: Person2Klass = new Person2Klass(33);
+const classP2_1: Person2Klass = new Person2Klass(32);
 const classP2_2: Person2Klass = new Person2Klass();
 
 (async()=>{

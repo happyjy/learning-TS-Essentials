@@ -18,7 +18,7 @@ class Person5Klass {
   }
 }
 
-const classP5_1: Person5Klass = new Person5Klass("Jyoon", 33);
+const classP5_1: Person5Klass = new Person5Klass("Jyoon", 32);
 console.log(classP5_1._name); // get을 하는 함수 getter
 console.log(classP5_1.name); // get을 하는 함수 getter
 classP5_1.name = "YJY"; // set을 하는 함수 setter

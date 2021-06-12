@@ -6,4 +6,4 @@ const helloPerson: HelloPerson = function(name: string, age?: number){
   console.log(`안녕 ${name}이에요`);
 }
 
-helloPerson("Yoon", 33);
+helloPerson("Yoon", 32);

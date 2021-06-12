@@ -37,7 +37,7 @@ class Person4Klass {
   }
 }
 
-const classP4_1: Person4Klass = new Person4Klass("Jyoon", 33);
+const classP4_1: Person4Klass = new Person4Klass("Jyoon", 32);
 
 (async()=>{
   console.log("비동기 테스트");

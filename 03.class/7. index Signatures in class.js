@@ -3,7 +3,7 @@
   # 7. index Signatures in class
 
   * 클래스 프로퍼티가 동적으로 바뀔때 사용
-  * 초기값을 설정해 줄 필요가 없다.
+  * 초기값을 설정해 줄 필요가 없다.(어떤 프로퍼티 명으로 들어올지 모르기 때문이다.)
   *
 */
 var Person7Klass = /** @class */ (function () {

@@ -1,7 +1,8 @@
 /* 
   # 10. Abstract Classes
-    * Abstract 클래스로 만들고 사용하려면 
-      클래스, 프로퍼티, 함수
+    * Abstract 클래스로 만들고 사용하려면 사용하고 싶은
+      클래스, 프로퍼티, 함수에 abstract 키워드를 붙여 
+      객체로 만들 class에 extends 키워드를 통해서 상속한다.
 */ 
 
 abstract class AbstractKlass11{
@@ -31,7 +32,7 @@ class Klass11 extends AbstractKlass11{
   }
 }
 
-const klass11Inst = new Klass11(33);
+const klass11Inst = new Klass11(32);
 klass11Inst.setName("jyoon");
 const getNameResult = klass11Inst.getName();
 const klass11InsAge = klass11Inst.age;

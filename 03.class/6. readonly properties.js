@@ -15,5 +15,5 @@ var Person6Klass = /** @class */ (function () {
     };
     return Person6Klass;
 }());
-var classP6_1 = new Person6Klass("Jyoon", 33);
+var classP6_1 = new Person6Klass("Jyoon", 32);
 // classP6_1.name = "YJY";  // [point] readonly라서 에러 

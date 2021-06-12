@@ -82,7 +82,7 @@ var Person4Klass = /** @class */ (function () {
     };
     return Person4Klass;
 }());
-var classP4_1 = new Person4Klass("Jyoon", 33);
+var classP4_1 = new Person4Klass("Jyoon", 32);
 (function () { return __awaiter(void 0, void 0, void 0, function () {
     var result;
     return __generator(this, function (_a) {

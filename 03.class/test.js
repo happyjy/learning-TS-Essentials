@@ -1,7 +1,9 @@
 "use strict";
 /*
   # 10. Abstract Classes
-    * 클래스와
+    * Abstract 클래스로 만들고 사용하려면 사용하고 싶은
+      클래스, 프로퍼티, 함수에 abstract 키워드를 붙여
+      객체로 만들 class에 extends 키워드를 통해서 상속한다.
 */
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -22,6 +24,9 @@ var AbstractKlass11 = /** @class */ (function () {
     function AbstractKlass11() {
         this._name = "mark";
     }
+    AbstractKlass11.prototype.getAge = function () {
+        return 0;
+    };
     return AbstractKlass11;
 }());
 var Klass11 = /** @class */ (function (_super) {
@@ -39,7 +44,7 @@ var Klass11 = /** @class */ (function (_super) {
     };
     return Klass11;
 }(AbstractKlass11));
-var klass11Inst = new Klass11(33);
+var klass11Inst = new Klass11(32);
 klass11Inst.setName("jyoon");
 var getNameResult = klass11Inst.getName();
 var klass11InsAge = klass11Inst.age;

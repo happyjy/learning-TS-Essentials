@@ -53,5 +53,5 @@ var Child10Klass = /** @class */ (function (_super) {
 var p10 = new Parent10Klass("yyy", 0);
 // p10._name // protected 접근제한자 
 // p10.printName() // protected 접근제한자 
-var c10 = new Child10Klass(33);
+var c10 = new Child10Klass(32);
 c10.print();

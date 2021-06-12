@@ -23,7 +23,7 @@ var Person5Klass = /** @class */ (function () {
     });
     return Person5Klass;
 }());
-var classP5_1 = new Person5Klass("Jyoon", 33);
+var classP5_1 = new Person5Klass("Jyoon", 32);
 console.log(classP5_1._name); // get을 하는 함수 getter
 console.log(classP5_1.name); // get을 하는 함수 getter
 classP5_1.name = "YJY"; // set을 하는 함수 setter

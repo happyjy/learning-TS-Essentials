@@ -37,7 +37,7 @@ class Person3Klass {
   }
 }
 
-const classP3_1: Person3Klass = new Person3Klass(33);
+const classP3_1: Person3Klass = new Person3Klass(32);
 const classP3_2: Person3Klass = new Person3Klass();
 
 (async()=>{
@@ -53,3 +53,15 @@ console.log(classP3_2);
 
 
 
+class Base {
+  protected m = 10;
+}
+class Derived extends Base {
+  // No modifier, so default is 'public'
+  m = 15;
+}
+const d1 = new Base();
+// console.log("### > d1: ", d1.m); // 접근 불가
+
+const d2 = new Derived();
+console.log("### > d2: ", d2.m); // OK

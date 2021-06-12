@@ -87,7 +87,7 @@ var Person2Klass = /** @class */ (function () {
     };
     return Person2Klass;
 }());
-var classP2_1 = new Person2Klass(33);
+var classP2_1 = new Person2Klass(32);
 var classP2_2 = new Person2Klass();
 (function () { return __awaiter(void 0, void 0, void 0, function () {
     var result;

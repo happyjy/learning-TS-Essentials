@@ -39,5 +39,5 @@ const p10 = new Parent10Klass("yyy", 0);
 // p10._name // protected 접근제한자 
 // p10.printName() // protected 접근제한자 
 
-const c10 = new Child10Klass(33);
+const c10 = new Child10Klass(32);
 c10.print();
